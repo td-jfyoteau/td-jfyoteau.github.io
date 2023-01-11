@@ -1,0 +1,456 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>faq</title>
+	<style type="text/css">
+		body {
+			width: 100% !important;
+			min-width: 100%;
+			margin: 0;
+			padding: 0;
+			font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+		}
+
+		button {
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			outline: none;
+			padding: 0;
+			appearance: none;
+		}
+
+		ul,
+		ol {
+			padding: 0;
+		}
+
+		ol,
+		ul {
+			list-style: none;
+		}
+
+
+		ul,
+		dl,
+		dd,
+		p {
+			margin: 0;
+		}
+
+		img {
+			border: 0 none;
+			height: auto;
+			line-height: 0;
+			outline: none;
+			text-decoration: none;
+		}
+
+		a img {
+			border: 0 none;
+		}
+
+		strong {
+			font-weight: bold;
+		}
+
+		.btn-wrap {
+			width: 100%;
+			text-align: center;
+			line-height: 1;
+		}
+
+		.btn {
+			font-size: 18px;
+			padding: 15px 25px 12px;
+			display: inline-block;
+			position: relative;
+			width: 305px;
+			text-align: center;
+			font-weight: bold;
+			border-radius: 26px;
+			background-color: #E5E5E5;
+			font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+            color: #242424;
+		}
+
+		/* icon */
+		.plus.icon {
+			color: #9F9F9F;
+			position: absolute;
+			right: 0;
+			top: 65%;
+			transform: translateY(-65%);
+			-webkit-transform: translateY(-65%);
+			-ms-transform: translateY(-65%);
+		}
+
+		.plus.icon:before {
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 2px;
+			background-color: currentColor;
+		}
+
+		.plus.icon:after {
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 2px;
+			background-color: currentColor;
+			-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);
+		}
+
+		.arrow-right.icon {
+			color: #000;
+			position: absolute;
+			right: 25px;
+			top: 28px;
+		}
+
+		.arrow-right.icon:before {
+			content: '';
+			position: absolute;
+			right: 1px;
+			top: -5px;
+			width: 10px;
+			height: 10px;
+			border-top: solid 1px currentColor;
+			border-right: solid 1px currentColor;
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+
+		/*  */
+
+		.acd-check:checked+.acd-label .plus.icon:after {
+			display: none;
+		}
+
+		.wrapper {
+			word-break: normal;
+		}
+
+		.content {
+			padding: 0 20px;
+			font-size: 13px;
+			margin: 30px 0 42px 0;
+		}
+
+		.content-list {
+			margin: 0 0 60px;
+		}
+
+		.content-list dl {
+			border-top: 1px solid #F0F0F0;
+		}
+
+		.content-list dt {
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 1.4em;
+			text-indent: -16px;
+			padding: 20px 20px 0 15px;
+
+		}
+
+		.content-list dt:before {
+			content: 'Q';
+			color: #CC0033;
+			padding-right: 5px;
+		}
+
+
+		.content-list dd {
+			margin: 18px 0 0;
+		}
+
+		.content-list ol {
+			margin: 12px 0 0;
+		}
+
+		.content-list li {
+			list-style-position: inside;
+			counter-increment: cnt;
+			margin: 12px 0 0 16px;
+			text-indent: -16px;
+			line-height: 1.7em;
+		}
+
+		.content-list li:before {
+			display: marker;
+			content: "・";
+		}
+
+		.content-list dl:first-child {
+			border: none;
+		}
+
+		.content-list dl:last-child {
+			border-bottom: 1px solid #F0F0F0;
+		}
+
+
+		.acd-check {
+			display: none;
+		}
+
+		.acd-label {
+			display: block;
+			margin-bottom: 1px;
+			position: relative;
+		}
+
+		.acd-content {
+			height: 0;
+			opacity: 0;
+			visibility: hidden;
+			overflow: hidden;
+		}
+
+		.acd-check:checked+.acd-label+.acd-content {
+			height: auto;
+			opacity: 1;
+			visibility: visible;
+			padding-bottom: 40px;
+		}
+
+		.acd-content p+p {
+			margin-top: 15px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+			<div class="content-list">
+				<dl>
+					<input id="acd-check1" class="acd-check" type="checkbox" onchange="clickQuestion(1)">
+					<label class="acd-label" for="acd-check1">
+						<dt>1积分可以作为多少日元使用？
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p>1积分可以作为1日圓使用。<br>
+							不同加盟店对可使用单位的设置各不相同。日本国外加盟店的使用条件、汇率的详情，请咨询各加盟店。</p>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check2" class="acd-check" type="checkbox" onchange="clickQuestion(2)">
+					<label class="acd-label" for="acd-check2">
+						<dt>d POINT有哪些用途？
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p>可在各色店铺（d POINT加盟店）消费时使用。<br>
+							请参考 <a href="https://dpoint.jp/global/store/index.html">d POINT加盟店信息。</a>
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check3" class="acd-check" type="checkbox" onchange="clickQuestion(3)">
+					<label class="acd-label" for="acd-check3">
+						<dt>如何累积d POINT 的积分？
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p>在各色店铺（d POINT加盟店）消费可累积积分。
+							请参考<a href="https://dpoint.jp/global/store/index.html">d POINT加盟店信息。</a>
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check4" class="acd-check" type="checkbox" onchange="clickQuestion(4)">
+					<label class="acd-label" for="acd-check4">
+						<dt>如何在各色店铺（d POINT加盟店）使用d POINT？
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p>
+							付款时，向可使用d POINT的各色店铺的店员，出示d POINT CARD或MOBILE d POINT CARD 当中任意其一，提出希望使用d POINT。<br>请参考<a href="https://dpoint.jp/global/store/index.html">d POINT加盟店信息。</a>部分加盟店无法使用MOBILE d POINT CARD，敬请谅解。
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check5" class="acd-check" type="checkbox" onchange="clickQuestion(5)">
+					<label class="acd-label" for="acd-check5">
+						<dt>为什么无法使用d POINT？
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p>
+							d POINT无法使用的原因可能如下。 </p>
+						<ul>
+							<li>未注册d POINT CLUB会员。</li>
+							<li>未登录d POINT CARD。<a target="_blank" href="https://profile.smt.docomo.ne.jp/VIEW_ESITE/mms/sc/main.jsp?nid=MMG214002BEN&utm_source=dpc&utm_medium=referral&utm_content=faq">请于此</a>登录d
+								POINT CARD。</li>
+							<li>使用的积分数量超过了持有积分数量。</li>
+							<li>无法使用d POINT(期间/用途限定)的服务。</li>
+							<li>未达到各色商店（d POINT加盟店）分别制定的d POINT使用条件。</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check6" class="acd-check" type="checkbox" onchange="clickQuestion(6)">
+					<label class="acd-label" for="acd-check6">
+						<dt>d POINT CARD需要支付年会费吗？
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p> d POINT CARD无年会费。 </p>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check7" class="acd-check" type="checkbox" onchange="clickQuestion(7)">
+					<label class="acd-label" for="acd-check7">
+						<dt>如何查询获取/使用积分的历史记录？
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p> MOBILE d POINT CARD（APP显示）及d POINT CARD确认方法存在差异。根据您正在使用的CARD种类，请通过以下方法进行确认。 </p>
+						<p> ■MOBILE d POINT CARD（APP显示）<br>
+							显示APP内的MOBILE d POINT CARD，点击POINT合计栏右侧的箭头，即可显示POINT的获取及使用记录，请通过该处页面进行确认。
+						</p>
+						<p> ■d POINT CARD<br>
+							<a target="_blank" href="https://point.smt.docomo.ne.jp/spguide/value/gkkcp013.srv?M-FrmId=P000001">
+								请通过此处</a>确认。</p>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check8" class="acd-check" type="checkbox" onchange="clickQuestion(8)">
+					<label class="acd-label" for="acd-check8">
+						<dt>什么是d ACCOUNT？
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p> d ACCOUNT是指利用d POINT等服务时所需的用户名ID。 </p>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check9" class="acd-check" type="checkbox" onchange="clickQuestion(9)">
+					<label class="acd-label" for="acd-check9">
+						<dt>忘记ID/密码。
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p>
+							忘记ID/密码，请点击以下链接。
+							<br><a target="_blank" href="https://global.id.smt.docomo.ne.jp/cgi8/id/forgot">忘记ID/密码</a>
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check10" class="acd-check" type="checkbox" onchange="clickQuestion(10)">
+					<label class="acd-label" for="acd-check10">
+						<dt>可以删除d ACCOUNT吗？
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p>
+							注销d ACCOUNT，请点击以下<a target="_blank" href="https://global.id.smt.docomo.ne.jp/cgi7/id/menu">链接</a>
+						</p>
+						<p>
+							※需要输入ID/密码。<br>
+							※注销d ACCOUNT，与此ID相关的登录信息会被删除，无法恢复到注销前的状态。<br>
+							※即使使用同一ID再次注册d ACCOUNT,仍被视为不同账号，无法延续以往的信息。</p>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check11" class="acd-check" type="checkbox" onchange="clickQuestion(11)">
+					<label class="acd-label" for="acd-check11">
+						<dt>显示“邮件已发送”，但是未收到邮件。
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p>
+							请检查您输入的邮件地址或已登录的邮件地址是否有效。<br>
+							此外，垃圾邮件的设置会导致无法正常接收邮件。<br>
+							如设置了白名单收件，请将“@wdy.docomo.ne.jp”添加到白名单以接收邮件。 </p>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check12" class="acd-check" type="checkbox" onchange="clickQuestion(12)">
+					<label class="acd-label" for="acd-check12">
+						<dt>居住国家地区选项中无自己的国家地区，可注册会员的区域是否有限制？
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p> 会员注册页面中可选择的国家地区即为指定国家地区。今后会依次登录更多的区域，扩大范围。 </p>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check13" class="acd-check" type="checkbox" onchange="clickQuestion(13)">
+					<label class="acd-label" for="acd-check13">
+						<dt>哪里可以使用d Wi-Fi？
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p> 可以在机场、车站、咖啡厅、快餐店、餐厅等日本全国各种d Wi-Fi SPOT使用。<br>
+							详细内容请参阅<a target="_blank" href="https://visitor.docomowifi.com/zh-cn/area/">可使用热点检索网页</a>请通过以下链接进行确认。（仅提供英文版本） </p>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check14" class="acd-check" type="checkbox" onchange="clickQuestion(14)">
+					<label class="acd-label" for="acd-check14">
+						<dt>请告知可以使用本服务的终端。
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p> 智能手机及平板电脑、电脑等搭载满足Wi-Fi（IEEE802.11a/b/g/n/ac）规格的无线LAN的终端可以使用本服务。<br>
+							※部分终端可能无法使用。请确认使用终端的制造商。 </p>
+					</dd>
+				</dl>
+				<dl>
+					<input id="acd-check15" class="acd-check" type="checkbox" onchange="clickQuestion(15)">
+					<label class="acd-label" for="acd-check15">
+						<dt>需要付费吗？
+							<span class="plus icon"></span>
+						</dt>
+					</label>
+					<dd class="acd-content">
+						<p>可免费使用d Wi-Fi。</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="btn-wrap">
+			<button class="btn" onclick="clickSeeMore()">了解详情<span class="arrow-right icon"></span></button>
+		</div>
+	</div>
+    <script>
+        function clickQuestion(index) {
+            if (document.getElementById("acd-check" + index).checked) {
+                console.log('jsnotify://open-qa/' + index);
+                location.href = 'jsnotify://open-qa/' + index;
+            }
+            
+        }
+        function clickSeeMore() {
+            location.href = 'https://dpoint.jp/global/m/faq/index_zhs.html' + location.search;
+            
+        }
+    </script>
+</body>
+
+</html>

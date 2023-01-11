@@ -1,0 +1,453 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>よくある質問</title>
+    <style type="text/css">
+        body {
+            width: 100% !important;
+            min-width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            appearance: none;
+        }
+
+        ul,
+        ol {
+            padding: 0;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+
+        ul,
+        dl,
+        dd,
+        p {
+            margin: 0;
+        }
+
+        img {
+            border: 0 none;
+            height: auto;
+            line-height: 0;
+            outline: none;
+            text-decoration: none;
+        }
+
+        a img {
+            border: 0 none;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        .btn-wrap {
+            width: 100%;
+            text-align: center;
+            line-height: 1;
+        }
+
+        .btn {
+            font-size: 18px;
+            padding: 15px 25px 12px;
+            display: inline-block;
+            position: relative;
+            width: 305px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 26px;
+            background-color: #E5E5E5;
+            font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+            color: #242424;
+        }
+
+        /* icon */
+        .plus.icon {
+            color: #9F9F9F;
+            position: absolute;
+            right: 0;
+            top: 65%;
+            transform: translateY(-65%);
+            -webkit-transform: translateY(-65%);
+            -ms-transform: translateY(-65%);
+        }
+
+        .plus.icon:before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            background-color: currentColor;
+        }
+
+        .plus.icon:after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            background-color: currentColor;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+
+        .arrow-right.icon {
+            color: #000;
+            position: absolute;
+            right: 25px;
+            top: 28px;
+        }
+
+        .arrow-right.icon:before {
+            content: '';
+            position: absolute;
+            right: 1px;
+            top: -5px;
+            width: 10px;
+            height: 10px;
+            border-top: solid 1px currentColor;
+            border-right: solid 1px currentColor;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        /*  */
+
+        .acd-check:checked+.acd-label .plus.icon:after {
+            display: none;
+        }
+
+        .wrapper {
+            word-break: normal;
+        }
+
+        .content {
+            padding: 0 20px;
+            font-size: 13px;
+            margin: 30px 0 42px 0;
+        }
+
+        .content-list {
+            margin: 0 0 60px;
+        }
+
+        .content-list dl {
+            border-top: 1px solid #F0F0F0;
+        }
+
+        .content-list dt {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.4em;
+            text-indent: -16px;
+            padding: 20px 25px 0 15px;
+        }
+
+        .content-list dt:before {
+            content: 'Q';
+            color: #CC0033;
+            padding-right: 5px;
+        }
+
+
+        .content-list dd {
+            margin: 18px 0 0;
+        }
+
+        .content-list ol {
+            margin: 12px 0 0;
+        }
+
+        .content-list li {
+            list-style-position: inside;
+            counter-increment: cnt;
+            margin: 12px 0 0 16px;
+            text-indent: -16px;
+            line-height: 1.7em;
+        }
+
+        .content-list li:before {
+            display: marker;
+            content: "・";
+        }
+
+        .content-list dl:first-child {
+            border: none;
+        }
+
+        .content-list dl:last-child {
+            border-bottom: 1px solid #F0F0F0;
+        }
+
+
+        .acd-check {
+            display: none;
+        }
+
+        .acd-label {
+            display: block;
+            margin-bottom: 1px;
+            position: relative;
+        }
+
+        .acd-content {
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+        }
+
+        .acd-check:checked+.acd-label+.acd-content {
+            height: auto;
+            opacity: 1;
+            visibility: visible;
+            padding-bottom: 40px;
+        }
+
+        .acd-content p+p {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="content-list">
+                <dl>
+                    <input id="acd-check1" class="acd-check" type="checkbox" onchange="clickQuestion(1)">
+                    <label class="acd-label" for="acd-check1">
+                        <dt>How much yen per 1 point can I use?
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p>Points can be used at 1 yen per 1 point.<br>
+                        Some d POINT Member Stores may have a set limit on how many points can be used at a time. Also, in the case of member stores outside of Japan, conditions of use and exchange rates may be different, so please ask the member store for details.</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check2" class="acd-check" type="checkbox" onchange="clickQuestion(2)">
+                    <label class="acd-label" for="acd-check2">
+                        <dt>What ways are there to use d POINTs?
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p>d POINTs can be used for shopping, etc. at d POINT Member Stores. Please confirm the information of d POINT Member Stores <a href="https://dpoint.jp/global/store/index.html">here</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check3" class="acd-check" type="checkbox" onchange="clickQuestion(3)">
+                    <label class="acd-label" for="acd-check3">
+                        <dt>How can I earn d POINTs?
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p>You can earn points by shopping, etc. at d POINT member stores. Please confirm the information of d POINT Member Stores
+                            <a href="https://dpoint.jp/global/store/index.html">here</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check4" class="acd-check" type="checkbox" onchange="clickQuestion(4)">
+                    <label class="acd-label" for="acd-check4">
+                        <dt>How can I use my d POINTs at d POINT Member Stores?
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p>
+                            Please show your d POINT CARD or Mobile d POINT CARD at the cashier and please tell the staff at d POINT Member Stores how many d POINT you would like to use. You can check the information of d POINT Member Stores
+                            <a href="https://dpoint.jp/global/store/index.html">here.</a> Also, please note that Mobile d POINT CARD cannot be used at some member stores.
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check5" class="acd-check" type="checkbox" onchange="clickQuestion(5)">
+                    <label class="acd-label" for="acd-check5">
+                        <dt>Why did I fail to use d POINTs?
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p>
+                            The main reasons for not being able to use d POINTs are the following. </p>
+                        <ul>
+                            <li>When you are not registered for d POINT CLUB</li>
+                            <li>When you have not registered the d POINT CARD. Please register your d POINT CARD
+                                <a target="_blank" href="https://profile.smt.docomo.ne.jp/VIEW_ESITE/mms/sc/main.jsp?nid=MMG214002BEN&utm_source=dpc&utm_medium=referral&utm_content=faq">here</a>.
+                            </li>
+                            <li>When the amount of points you try to use, exceeds the amount of points available.</li>
+                            <li>When you try to use points for services that d POINT (limited term and use) cannot be used.</li>
+                            <li>When conditions of d POINT usage, set by each d POINT Member Store, are not met.</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check6" class="acd-check" type="checkbox" onchange="clickQuestion(6)">
+                    <label class="acd-label" for="acd-check6">
+                        <dt>Does d POINT CARD require an annual fee?
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p> No, d POINT CARD can be used without annual fee. </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check7" class="acd-check" type="checkbox" onchange="clickQuestion(7)">
+                    <label class="acd-label" for="acd-check7">
+                        <dt>Where can I check history of points earned and used?
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p> The ways of checking "History of points earned and used" are different depends on types of d POINT CARD. Please follow the instructions below for different types of d POINT CARD.</p>
+                        <p> ・Mobile d POINT CARD (APP)<br>
+                            Please open the Mobile d POINT CARD in the app, and click "Total Points". The history of points earned and used will be shown.
+                        </p>
+                        <p> d POINT CARD <br>
+                            Please click<a target="_blank" href="https://point.smt.docomo.ne.jp/spguide/value/gkkcp013.srv?M-FrmId=P000001">here</a></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check8" class="acd-check" type="checkbox" onchange="clickQuestion(8)">
+                    <label class="acd-label" for="acd-check8">
+                        <dt>What is d ACCOUNT?
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p> d ACCOUNT is the customer ID required to use DOCOMO's services such as d POINT. </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check9" class="acd-check" type="checkbox" onchange="clickQuestion(9)">
+                    <label class="acd-label" for="acd-check9">
+                        <dt>I forgot the ID/Password.
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p>
+                            If you forgot the ID/Password, please follow the procedures <a target="_blank" href="https://global.id.smt.docomo.ne.jp/cgi8/id/forgot">here</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check10" class="acd-check" type="checkbox" onchange="clickQuestion(10)">
+                    <label class="acd-label" for="acd-check10">
+                        <dt>Can I delete my d ACCOUNT?
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p>
+                            To delete your d ACCOUNT, please follow the procedures <a target="_blank" href="https://global.id.smt.docomo.ne.jp/cgi7/id/menu">here</a>
+                        </p>
+                        <p> *ID and Password are required.<br>
+                            *When the d ACCOUNT is deleted, registered information for this ID will be deleted and cannot be recovered back to the state before deletion.<br>
+                            *Even if you create d ACCOUNT again using the same ID, it will be handled as a different account and you will not be able to retrieve information from past accounts.</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check11" class="acd-check" type="checkbox" onchange="clickQuestion(11)">
+                    <label class="acd-label" for="acd-check11">
+                        <dt>The message “Mail has been sent” showed up but I received no email.
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p>
+                            Please check because of the filtering for spam emails and such. address already registered is valid.<br>
+                            Also, you may not be able to receive the email if there is filtering set for such as your spam email.<br>
+                            Please allow receiving email from "@wdy.docomo.ne.jp". </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check12" class="acd-check" type="checkbox" onchange="clickQuestion(12)">
+                    <label class="acd-label" for="acd-check12">
+                        <dt>My country is not listed in country of residence. Why?
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p> Currently, we can only provide this service to the countries listed in member registration screen.
+                            DOCOMO plans to gradually expand the service to other countries. </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check13" class="acd-check" type="checkbox" onchange="clickQuestion(13)">
+                    <label class="acd-label" for="acd-check13">
+                        <dt>Where can I use d Wi-Fi?
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p>You can use d Wi-Fi at various hotspots across Japan including airports, train stations, cafés and restaurants. For more details, please check the<a target="_blank" href="https://visitor.docomowifi.com/en/area/"> search page for available hotspots.</a> (English only)
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check14" class="acd-check" type="checkbox" onchange="clickQuestion(14)">
+                    <label class="acd-label" for="acd-check14">
+                        <dt>What are the devices that can use this service?
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p> This service can be used with wireless LAN equipped devices, such as smartphones, tablets, and computers, which satisfy Wi-Fi standards (IEEE802.11a/b/g/n/ac）. <br>
+                        *It may not be compatible with some devices. Please contact the manufacturer of your device. </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <input id="acd-check15" class="acd-check" type="checkbox" onchange="clickQuestion(15)">
+                    <label class="acd-label" for="acd-check15">
+                        <dt>Is it free of charge?
+                            <span class="plus icon"></span>
+                        </dt>
+                    </label>
+                    <dd class="acd-content">
+                        <p> d Wi-Fi is available for free. </p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="btn-wrap">
+            <button class="btn" onclick="clickSeeMore()">see more<span class="arrow-right icon"></span></button>
+        </div>
+    </div>
+    <script>
+        function clickQuestion(index) {
+            if (document.getElementById("acd-check" + index).checked) {
+                console.log('jsnotify://open-qa/' + index);
+                location.href = 'jsnotify://open-qa/' + index;
+            }
+        }
+
+        function clickSeeMore() {
+            location.href = 'https://dpoint.jp/global/m/faq/index_en.html' + location.search;
+        }
+    </script>
+</body>
+
+</html>
